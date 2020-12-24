@@ -99,6 +99,10 @@ export default function FooterTabsView() {
       </TabPanel>
             <TabPanel value={value} index={1}>
               <HiddenCards />
+              <hr/>
+              <HiddenCards />
+              <hr />
+              <HiddenCards />
       </TabPanel>
             <TabPanel value={value} index={2}>
                 Item Three

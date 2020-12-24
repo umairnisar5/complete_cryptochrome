@@ -1,6 +1,6 @@
 import React from 'react'
 import headerLogo from "./images/headerLogo.png";
-
+import "./HiddenCards.css";
 
 export const HiddenCards = () => {
     return (
@@ -11,12 +11,10 @@ export const HiddenCards = () => {
             <div className="cardDetail">
                 <p>Uniswap pair</p>
                 <h2>UNCX / WETH</h2>
-                <a href="#"> 
-                <h3> 
-                0xC70bB2736e218861DCa818d1e9f7A1930Fe61E5b 
+                <button > 
+                0xC70bB27
                 <i class="fa fa-clone" aria-hidden="true"></i>
-                </h3> 
-                </a>
+                </button><br />
                 <a href="#"> view on Uniswap </a>
             </div>
         </div>
