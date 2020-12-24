@@ -9,6 +9,7 @@ import Account from "../components/Account/Account";
 import { initializeWeb3, connectWallet } from "../utils/contract";
 import Web3 from 'web3'
 import { CONTRACT_ADDRESS, CONTRACT_ABI } from "../config"
+import FormCard from "../components/FormCard/FormCard";
 class App extends Component {
 
   constructor() {
@@ -68,6 +69,10 @@ class App extends Component {
           />
         </Switch>
         <Modal metamask={this.metamask} />
+        <FormCard />
+        <FormCard />
+        <FormCard />
+
       </div>
     )
   }
