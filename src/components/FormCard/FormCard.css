@@ -15,3 +15,7 @@ body{
     border-radius: 10px;
     margin-top: 20px;
 }
+
+.formContainer:hover{
+    cursor: pointer;
+}

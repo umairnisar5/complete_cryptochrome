@@ -4,4 +4,6 @@
     flex-direction: row;
     justify-content: space-evenly;
     padding-bottom: 10px;
+    transition: all .5s;
+    transition-timing-function: ease-in;
 }
