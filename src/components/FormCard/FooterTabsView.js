@@ -59,8 +59,7 @@ const useStylesAppBar = makeStyles((theme) => ({
 
 const useStylesTab = makeStyles((theme) => ({
     root: {
-        outline: "none !important",
-        border: "none !important"
+        outline: "none !important"
     },
 }));
 export default function FooterTabsView() {
@@ -78,7 +77,7 @@ export default function FooterTabsView() {
             <AppBar
                 className={appBarClasses.root}
                 position="static">
-                <Tabs value={value} onChange={handleChange} aria-label="simple tabs example">
+                <Tabs value={value} indicatorColor="white" onChange={handleChange} aria-label="Farm Card">
                     <Tab className={tabButtonClasses.root} label="stake" {...a11yProps(0)} />
                     <Tab className={tabButtonClasses.root} label="Contracts" {...a11yProps(1)} />
                     <Tab className={tabButtonClasses.root} label="farm Info" {...a11yProps(2)} />
