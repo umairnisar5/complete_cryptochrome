@@ -7,6 +7,7 @@ import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import HiddenCards from  "./HiddenCards";
+import StakeData from "./StakeData";
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -95,7 +96,7 @@ export default function FooterTabsView() {
                 </Tabs>
             </AppBar>
             <TabPanel className={tabPanelButtonClasses.root} value={value} index={0}>
-                Item One
+                <StakeData />
       </TabPanel>
             <TabPanel value={value} index={1}>
               <HiddenCards />

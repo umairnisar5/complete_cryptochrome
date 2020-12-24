@@ -1,0 +1,41 @@
+.stakeDataContainer{
+    margin: 10px;
+}
+
+.stakeHeader {
+    display: flex;
+    flex-direction: row;
+}
+
+.stakeHeader img {
+    margin: 0px 5px 0px 0px;
+}
+
+.stakeHeader h2 {
+    margin: 0px 25px 0px 0px;
+    font-size: x-large;
+}
+
+.stakeDes {
+    color: rgb(88, 112, 219);
+    padding-top: 15px;
+}
+
+.stakeFooter {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    border-radius: 50px;
+    text-align: center;
+    justify-content: center;
+}
+
+.stakeFooter p {
+    margin-top: 14px;
+}
+
+.stakeFooter i {
+    margin: 15px 12px 0px 0px;
+}
