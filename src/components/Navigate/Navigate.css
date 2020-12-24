@@ -1,0 +1,16 @@
+#section2 {
+  
+}
+
+#card_module {
+  background: rgb(88, 63, 251);
+  background: radial-gradient(
+    circle,
+    rgba(88, 63, 251, 1) 0%,
+    rgba(70, 86, 252, 1) 100%
+  );
+  color: #fff;
+}
+a:hover {
+  text-decoration: none;
+}

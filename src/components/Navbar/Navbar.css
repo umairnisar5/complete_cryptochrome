@@ -1,0 +1,10 @@
+#nav1 {
+  background: rgb(12, 15, 42);
+  background: linear-gradient(
+    90deg,
+    rgba(212, 41, 230, 1) 0%,
+	 rgba(212, 41, 230, 1) 50%,
+    rgba(212, 41, 230, 1) 100%
+  );
+  border-bottom: 2px solid #fff;
+}
