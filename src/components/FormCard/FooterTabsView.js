@@ -44,6 +44,7 @@ const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
         backgroundColor: theme.palette.common.white,
+        borderRadius: "10px"
     },
 }));
 
@@ -62,10 +63,19 @@ const useStylesTab = makeStyles((theme) => ({
         outline: "none !important"
     },
 }));
+
+
+
+const useStylesTabPanel = makeStyles((theme) => ({
+    root: {
+        borderRadius: "2px"
+    },
+}));
 export default function FooterTabsView() {
     const classes = useStyles();
     const appBarClasses = useStylesAppBar()
     const tabButtonClasses = useStylesTab()
+    const tabPanelButtonClasses = useStylesTabPanel()
     const [value, setValue] = React.useState(0);
 
     const handleChange = (event, newValue) => {
@@ -83,7 +93,7 @@ export default function FooterTabsView() {
                     <Tab className={tabButtonClasses.root} label="farm Info" {...a11yProps(2)} />
                 </Tabs>
             </AppBar>
-            <TabPanel value={value} index={0}>
+            <TabPanel className={tabPanelButtonClasses.root} value={value} index={0}>
                 Item One
       </TabPanel>
             <TabPanel value={value} index={1}>
