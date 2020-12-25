@@ -6,7 +6,7 @@
 .arrowLogo i {
     color: lightgray;
     margin-top: 40px;
-    font-size: 35px;
+    font-size: 25px;
 }
 
 .arrowLogoDetail {
@@ -32,7 +32,7 @@
 .tintLogo i {
     color: lightgray;
     margin-top: 40px;
-    font-size: 35px;
+    font-size: 25px;
 }
 
 .tintLogoDetail {
@@ -59,7 +59,7 @@ display: flex;
 .cubeLogo i {
     color: lightgray;
     margin-top: 20px;
-    font-size: 35px;
+    font-size: 25px;
 }
 
 .cubeLogoDetail {
@@ -86,7 +86,7 @@ display: flex;
 .toggleOffLogo i {
     color: lightgray;
     margin-top: 20px;
-    font-size: 35px;
+    font-size: 25px;
 }
     
 .toggleOffLogoDetail {
@@ -113,7 +113,7 @@ display: flex;
 .toggleOnLogo i {
     color: lightgray;
     margin-top: 50px;
-    font-size: 35px;
+    font-size: 25px;
 }
 
 .toggleOnLogoDetail {
@@ -145,7 +145,7 @@ display: flex;
 .toggleOff2Logo i {
     color: lightgray;
     margin-top: 20px;
-    font-size: 35px;
+    font-size: 25px;
 }
     
 .toggleOff2LogoDetail {
@@ -172,7 +172,7 @@ display: flex;
 .shieldLogo i {
     color: lightgray;
     margin-top: 20px;
-    font-size: 35px;
+    font-size: 25px;
 }
     
 .shieldLogoDetail {
@@ -199,7 +199,7 @@ display: flex;
 .userLogo i {
     color: lightgray;
     margin-top: 20px;
-    font-size: 35px;
+    font-size: 25px;
 }
     
 .userLogoDetail {
@@ -226,7 +226,7 @@ display: flex;
 .arrowDownLogo i {
     color: lightgray;
     margin-top: 20px;
-    font-size: 35px;
+    font-size: 25px;
 }
     
 .arrowDownLogoDetail {
