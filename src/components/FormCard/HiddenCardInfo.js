@@ -1,12 +1,12 @@
 import React from 'react';
 import "./HiddenCardInfo.css";
 
- const HiddenCardInfo = () => {
+const HiddenCardInfo = () => {
     return (
         <div className="hiddenCardInfo">
             <div className="percentageDiv">
                 <div className="arrowLogo">
-                <i className="fa fa-arrow-up" aria-hidden="true"></i>
+                    <i className="fa fa-arrow-up" aria-hidden="true"></i>
                 </div>
                 <div className="arrowLogoDetail">
                     <p>APY (in dollar value)</p>
@@ -17,7 +17,7 @@ import "./HiddenCardInfo.css";
             <hr />
             <div className="dollarDiv">
                 <div className="tintLogo">
-                <i className="fa fa-tint" aria-hidden="true"></i>
+                    <i className="fa fa-tint" aria-hidden="true"></i>
                 </div>
                 <div className="tintLogoDetail">
                     <p>Total Ip tokens farming</p>
@@ -25,30 +25,30 @@ import "./HiddenCardInfo.css";
                     <p>578.3487 UNIV2</p>
                 </div>
             </div>
-            <hr/>
+            <hr />
             <div className="blockRewardDiv">
                 <div className="cubeLogo">
-                <i className="fa fa-cube" aria-hidden="true"></i>
+                    <i className="fa fa-cube" aria-hidden="true"></i>
                 </div>
                 <div className="cubeLogoDetail">
                     <p>Block reward</p>
                     <h2>0.0154 UNCL</h2>
                 </div>
             </div>
-            <hr/>
+            <hr />
             <div className="startBlockDiv">
                 <div className="toggleOffLogo">
-                <i className="fa fa-toggle-off" aria-hidden="true"></i>
+                    <i className="fa fa-toggle-off" aria-hidden="true"></i>
                 </div>
                 <div className="toggleOffLogoDetail">
                     <p>Start Block</p>
                     <h2>112507787</h2>
                 </div>
             </div>
-            <hr/>
+            <hr />
             <div className="bonusMultiplierDiv">
                 <div className="toggleOnLogo">
-                <i className="fa fa-toggle-on" aria-hidden="true"></i>
+                    <i className="fa fa-toggle-on" aria-hidden="true"></i>
                 </div>
                 <div className="toggleOnLogoDetail">
                     <p className="sameP2">Bonus Multiplier / Bonus end block</p>
@@ -57,40 +57,40 @@ import "./HiddenCardInfo.css";
                     <p className="sameP2">Block: 11296064</p>
                 </div>
             </div>
-            <hr/>
+            <hr />
             <div className="endBlockDiv">
                 <div className="toggleOff2Logo">
-                <i className="fa fa-toggle-off" aria-hidden="true"></i>
+                    <i className="fa fa-toggle-off" aria-hidden="true"></i>
                 </div>
                 <div className="toggleOff2LogoDetail">
                     <p>End block (in 4 months)</p>
                     <h2>12365817</h2>
                 </div>
             </div>
-            <hr/>
+            <hr />
             <div className="amountVaultDiv">
                 <div className="shieldLogo">
-                <i className="fa fa-shield" aria-hidden="true"></i>
+                    <i className="fa fa-shield" aria-hidden="true"></i>
                 </div>
                 <div className="shieldLogoDetail">
                     <p>Amount in vault</p>
                     <h2>14,195.5974 UNCL</h2>
                 </div>
             </div>
-            <hr/>
+            <hr />
             <div className="numberFarmerDiv">
                 <div className="userLogo">
-                <i className="fa fa-user-circle-o" aria-hidden="true"></i>
+                    <i className="fa fa-user-circle-o" aria-hidden="true"></i>
                 </div>
                 <div className="userLogoDetail">
                     <p>Number of farmers</p>
                     <h2>57</h2>
                 </div>
             </div>
-            <hr/>
+            <hr />
             <div className="pendingRewardDiv">
                 <div className="arrowDownLogo">
-                <i className="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                    <i className="fa fa-arrow-circle-down" aria-hidden="true"></i>
                 </div>
                 <div className="arrowDownLogoDetail">
                     <p>Your pending reward</p>
