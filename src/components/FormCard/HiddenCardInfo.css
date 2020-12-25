@@ -1,0 +1,131 @@
+/* first div */
+.percentageDiv {
+    display: flex;
+}
+
+.arrowLogo i {
+    color: lightgray;
+    margin-top: 40px;
+    font-size: 35px;
+}
+
+.arrowLogoDetail {
+    margin-left: 20px;
+}
+
+.arrowLogoDetail p {
+    color: grey;
+    font-size: 12px;
+    transform: translateY(6px);
+}
+
+.arrowLogoDetail h2 {
+    font-size: x-large;
+    font-style: bold;
+}
+
+/* second div */
+.dollarDiv {
+    display: flex;
+}
+
+.tintLogo i {
+    color: lightgray;
+    margin-top: 40px;
+    font-size: 35px;
+}
+
+.tintLogoDetail {
+    margin-left: 20px;
+}
+
+.tintLogoDetail p {
+    color: grey;
+    font-size: 12px;
+    transform: translateY(6px);
+}
+
+.tintLogoDetail h2 {
+    font-size: x-large;
+    font-style: bold;
+}
+
+/* third div */
+.blockRewardDiv {
+display: flex;
+}
+
+.cubeLogo i {
+    color: lightgray;
+    margin-top: 20px;
+    font-size: 35px;
+}
+
+.cubeLogoDetail {
+    margin-left: 20px;
+}
+
+.cubeLogoDetail p {
+    color: grey;
+    font-size: 12px;
+    transform: translateY(6px);
+}
+
+.cubeLogoDetail h2 {
+    font-size: x-large;
+    font-style: bold;
+}
+
+/* fourth div */
+.startBlockDiv {
+    display: flex;
+}
+    
+.toggleOffLogo i {
+    color: lightgray;
+    margin-top: 20px;
+    font-size: 35px;
+}
+    
+.toggleOffLogoDetail {
+    margin-left: 20px;
+}
+    
+.toggleOffLogoDetail p {
+    color: grey;
+    font-size: 12px;
+    transform: translateY(6px);
+}
+    
+.toggleOffLogoDetail h2 {
+    font-size: x-large;
+    font-style: bold;
+}
+
+/* fifth div */
+.bonusMultiplierDiv {
+    display: flex;
+}
+
+.toggleOnLogo i {
+    color: lightgray;
+    margin-top: 40px;
+    font-size: 35px;
+}
+
+.toggleOnLogoDetail {
+    margin-left: 20px;
+}
+
+.toggleOnLogoDetail p {
+    color: grey;
+    font-size: 12px;
+    transform: translateY(6px);
+}
+
+.toggleOnLogoDetail h2 {
+    font-size: x-large;
+    font-style: bold;
+}
+
+/* sixth div */
