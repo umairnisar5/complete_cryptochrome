@@ -51,10 +51,10 @@ import "./HiddenCardInfo.css";
                 <i className="fa fa-toggle-on" aria-hidden="true"></i>
                 </div>
                 <div className="toggleOnLogoDetail">
-                    <p>Bonus Multiplier / Bonus end block</p>
-                    <p>2x Bonus</p>
-                    <p>Sat 21 Nov 14:52 / a month ago</p>
-                    <p>Block: 11296064</p>
+                    <p className="sameP2">Bonus Multiplier / Bonus end block</p>
+                    <p className="sameP">2x Bonus</p>
+                    <p className="sameP">Sat 21 Nov 14:52 / a month ago</p>
+                    <p className="sameP2">Block: 11296064</p>
                 </div>
             </div>
             <hr/>
@@ -88,7 +88,7 @@ import "./HiddenCardInfo.css";
                 </div>
             </div>
             <hr/>
-            <div className="pendingReward">
+            <div className="pendingRewardDiv">
                 <div className="arrowDownLogo">
                 <i className="fa fa-arrow-circle-down" aria-hidden="true"></i>
                 </div>
