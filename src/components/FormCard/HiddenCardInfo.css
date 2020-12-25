@@ -155,3 +155,53 @@ display: flex;
 }
 
 /* seventh div */
+.amountVaultDiv {
+    display: flex;
+}
+    
+.shieldLogo i {
+    color: lightgray;
+    margin-top: 20px;
+    font-size: 35px;
+}
+    
+.shieldLogoDetail {
+    margin-left: 20px;
+}
+    
+.shieldLogoDetail p {
+    color: grey;
+    font-size: 12px;
+    transform: translateY(6px);
+}
+    
+.shieldLogoDetail h2 {
+    font-size: x-large;
+    font-style: bold;
+}
+
+/* eightth div */
+.numberFarmerDiv {
+    display: flex;
+}
+    
+.userLogo i {
+    color: lightgray;
+    margin-top: 20px;
+    font-size: 35px;
+}
+    
+.userLogoDetail {
+    margin-left: 20px;
+}
+    
+.userLogoDetail p {
+    color: grey;
+    font-size: 12px;
+    transform: translateY(6px);
+}
+    
+.userLogoDetail h2 {
+    font-size: x-large;
+    font-style: bold;
+}
