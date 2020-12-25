@@ -129,3 +129,29 @@ display: flex;
 }
 
 /* sixth div */
+.endBlockDiv {
+    display: flex;
+}
+    
+.toggleOff2Logo i {
+    color: lightgray;
+    margin-top: 20px;
+    font-size: 35px;
+}
+    
+.toggleOff2LogoDetail {
+    margin-left: 20px;
+}
+    
+.toggleOff2LogoDetail p {
+    color: grey;
+    font-size: 12px;
+    transform: translateY(6px);
+}
+    
+.toggleOff2LogoDetail h2 {
+    font-size: x-large;
+    font-style: bold;
+}
+
+/* seventh div */
