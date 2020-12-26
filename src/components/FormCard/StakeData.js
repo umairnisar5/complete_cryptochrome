@@ -6,10 +6,14 @@ const StakeData = () => {
   return (
     <div className="stakeDataContainer">
       <div className="stakeHeader">
+      <div>
         <img src={headerLogo} height="35" />
         <h2>UNCX</h2>
+        </div>
+        <div>
         <img src={headerLogo} height="35" />
         <h2>WETH</h2>
+        </div>
       </div>
       <div className="stakeDes">
         <p>You need UniV2 liquidity tokens to farm this pool</p>

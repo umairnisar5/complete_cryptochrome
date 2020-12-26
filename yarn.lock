@@ -2289,6 +2289,24 @@
     "@typescript-eslint/types" "4.10.0"
     eslint-visitor-keys "^2.0.0"
 
+"@uiw/copy-to-clipboard@^1.0.11":
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/@uiw/copy-to-clipboard/-/copy-to-clipboard-1.0.11.tgz#60b6b63480af902c21cce827b70a6893f404ea51"
+  integrity sha512-VCcvOkDW8LgDUPRnYNwuLJWBlpVmmYiqEhHl6XpMvqrKEkTGCP+Jgx6Yx1q0MEey0aEdIiHIT1kUTHWyqz9rbA==
+
+"@uiw/react-copy-to-clipboard@^4.7.2":
+  version "4.7.2"
+  resolved "https://registry.yarnpkg.com/@uiw/react-copy-to-clipboard/-/react-copy-to-clipboard-4.7.2.tgz#bd0167393a57661b2a738557e5101fd68d965b1f"
+  integrity sha512-DFzS98xdnmx827nXQCJToAT2l1Ndp2uK/krdd9ke1NFKjVIljMdT0GKo9JowQZLtXTXH+wPNgZ3ywanrpMCFXw==
+  dependencies:
+    "@uiw/copy-to-clipboard" "^1.0.11"
+    "@uiw/utils" "^4.7.2"
+
+"@uiw/utils@^4.7.2":
+  version "4.7.2"
+  resolved "https://registry.yarnpkg.com/@uiw/utils/-/utils-4.7.2.tgz#116e9ccc69c01d6fae077e4df70e4ae666556f5c"
+  integrity sha512-NY0jNd39hN/beaD9cdE63SDJY+yHpGbS5NX4GTUOgWxbKkJ7vOhHDrqIVPaOkmEe7/lYPmoZ9b4sefeuCaSjfw==
+
 "@webassemblyjs/ast@1.9.0":
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/ast/-/ast-1.9.0.tgz#bd850604b4042459a5a41cd7d338cbed695ed964"

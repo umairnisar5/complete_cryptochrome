@@ -54,6 +54,7 @@
 /* third div */
 .blockRewardDiv {
 display: flex;
+   width: 26px;
 }
 
 .cubeLogo i {
@@ -73,9 +74,25 @@ display: flex;
 }
 
 .cubeLogoDetail h2 {
+    
     font-size: x-large;
     font-style: bold;
     font-weight: 600;
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    width: 90px; 
+    height: 1.2em; 
+   
+   
+}
+
+.cubeLogoDetail div{
+    display: flex;
+    flex-direction: row;
+}
+.cubeLogoDetail div .uncl{
+    font-weight: bold;
+    font-size: 25px;
 }
 
 /* fourth div */

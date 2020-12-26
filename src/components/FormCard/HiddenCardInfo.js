@@ -35,7 +35,10 @@ const HiddenCardInfo = ({blockReward, startBlock, bonusEndBlock, bonus, endBlock
         </div>
         <div className="cubeLogoDetail">
           <p>Block reward</p>
-          <h2>{blockReward} UNCL</h2>
+          <div>
+          <h2><span id="hiden-no">{blockReward}</span></h2>
+          <h4 className="uncl"> UNCL</h4>
+          </div>
         </div>
       </div>
       <hr />
