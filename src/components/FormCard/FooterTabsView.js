@@ -8,7 +8,7 @@ import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import HiddenCards from "./HiddenCards";
 import HiddenCards2 from "./HiddenCards2";
-import HiddenCards2 from "./HiddenCards3";
+import HiddenCards3 from "./HiddenCards3";
 import StakeData from "./StakeData";
 import HiddenCardInfo from "./HiddenCardInfo";
 
