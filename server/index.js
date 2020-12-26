@@ -2,10 +2,12 @@ const Web3 = require("web3");
 const Tx = require("ethereumjs-tx").Transaction;
 const express = require("express");
 var bodyParser = require("body-parser");
+var cors = require('cors')
 const app = express();
 app.use(bodyParser.json());
 const fetch = require("node-fetch");
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(cors())
 let web3 = new Web3(
   new Web3.providers.HttpProvider(
     "https://mainnet.infura.io/v3/32e8833d78054890b364106c5b759454"

@@ -1,7 +1,8 @@
 import React from "react";
 import "./HiddenCardInfo.css";
+import {connect} from "react-redux";
 
-const HiddenCardInfo = () => {
+const HiddenCardInfo = (props) => {
   return (
     <div className="hiddenCardInfo">
       <div className="percentageDiv">
@@ -35,7 +36,7 @@ const HiddenCardInfo = () => {
         </div>
         <div className="cubeLogoDetail">
           <p>Block reward</p>
-          <h2>0.0154 UNCL</h2>
+          <h2>{props.state.blockReward} UNCL</h2>
         </div>
       </div>
       <hr />
@@ -57,7 +58,7 @@ const HiddenCardInfo = () => {
           <p className="sameP2">Bonus Multiplier / Bonus end block</p>
           <p className="sameP">2x Bonus</p>
           <p className="sameP">Sat 21 Nov 14:52 / a month ago</p>
-          <p className="sameP2">Block: 11296064</p>
+          <p className="sameP2">Block: {props.state.bonusEndBlock}</p>
         </div>
       </div>
       <hr />
@@ -67,7 +68,7 @@ const HiddenCardInfo = () => {
         </div>
         <div className="toggleOff2LogoDetail">
           <p>End block (in 4 months)</p>
-          <h2>12365817</h2>
+          <h2>{props.state.endBlock}</h2>
         </div>
       </div>
       <hr />
@@ -103,5 +104,10 @@ const HiddenCardInfo = () => {
     </div>
   );
 };
+const mapStateToProps = (state /*, ownProps*/) => {
+  return {
+    state: state,
+  }
+}
 
-export default HiddenCardInfo;
+export default connect(mapStateToProps)(HiddenCardInfo);

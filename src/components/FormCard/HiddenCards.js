@@ -1,8 +1,9 @@
 import React from "react";
 import headerLogo from "./images/headerLogo.png";
+import {connect} from "react-redux";
 import "./HiddenCards.css";
 
-export const HiddenCards = () => {
+export const HiddenCards = (props) => {
   return (
     <div className="hiddenCardContainer">
       <div className="cardLogo">
@@ -12,7 +13,8 @@ export const HiddenCards = () => {
         <p>Uniswap pair</p>
         <h2>UNCX / WETH</h2>
         <button>
-          0xC70bB27
+          {props.lpToken}
+          
           <i class="fa fa-clone" aria-hidden="true"></i>
         </button>
         <br />
@@ -22,4 +24,11 @@ export const HiddenCards = () => {
   );
 };
 
-export default HiddenCards;
+
+const mapStateToProps = (state /*, ownProps*/) => {
+  return {
+    lpToken: state.lpToken,
+  }
+}
+
+export default connect(mapStateToProps)(HiddenCards);
