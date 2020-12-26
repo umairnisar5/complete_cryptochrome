@@ -73,7 +73,7 @@ const useStylesTabPanel = makeStyles((theme) => ({
   },
 }));
 export default function FooterTabsView({ data }) {
-  const { lpToken, rewardToken, address } = data;
+  const { lpToken, rewardToken, address, blockReward, startBlock, bonusEndBlock, bonus, endBlock, bonnumFarmersus } = data;
   const classes = useStyles();
   const appBarClasses = useStylesAppBar();
   const tabButtonClasses = useStylesTab();
@@ -121,7 +121,7 @@ export default function FooterTabsView({ data }) {
         <HiddenCards3 address={address} />
       </TabPanel>
       <TabPanel value={value} index={2}>
-        <HiddenCardInfo />
+        <HiddenCardInfo blockReward={blockReward} startBlock={startBlock} bonusEndBlock={bonusEndBlock} bonus={bonus} endBlock={endBlock} bonnumFarmersus={bonnumFarmersus} />
       </TabPanel>
     </div>
   );

@@ -1,8 +1,7 @@
 import React from "react";
 import "./HiddenCardInfo.css";
-import {connect} from "react-redux";
 
-const HiddenCardInfo = (props) => {
+const HiddenCardInfo = ({blockReward, startBlock, bonusEndBlock, bonus, endBlock, bonnumFarmersus}) => {
   return (
     <div className="hiddenCardInfo">
       <div className="percentageDiv">
@@ -36,7 +35,7 @@ const HiddenCardInfo = (props) => {
         </div>
         <div className="cubeLogoDetail">
           <p>Block reward</p>
-          <h2>{props.state.blockReward} UNCL</h2>
+          <h2>{blockReward} UNCL</h2>
         </div>
       </div>
       <hr />
@@ -46,7 +45,7 @@ const HiddenCardInfo = (props) => {
         </div>
         <div className="toggleOffLogoDetail">
           <p>Start Block</p>
-          <h2>112507787</h2>
+          <h2>{startBlock}</h2>
         </div>
       </div>
       <hr />
@@ -56,9 +55,9 @@ const HiddenCardInfo = (props) => {
         </div>
         <div className="toggleOnLogoDetail">
           <p className="sameP2">Bonus Multiplier / Bonus end block</p>
-          <p className="sameP">2x Bonus</p>
+          <p className="sameP">{bonus}x Bonus</p>
           <p className="sameP">Sat 21 Nov 14:52 / a month ago</p>
-          <p className="sameP2">Block: {props.state.bonusEndBlock}</p>
+          <p className="sameP2">Block:{bonusEndBlock} </p>
         </div>
       </div>
       <hr />
@@ -68,7 +67,7 @@ const HiddenCardInfo = (props) => {
         </div>
         <div className="toggleOff2LogoDetail">
           <p>End block (in 4 months)</p>
-          <h2>{props.state.endBlock}</h2>
+          <h2>{endBlock}</h2>
         </div>
       </div>
       <hr />
@@ -88,7 +87,7 @@ const HiddenCardInfo = (props) => {
         </div>
         <div className="userLogoDetail">
           <p>Number of farmers</p>
-          <h2>57</h2>
+          <h2>{bonnumFarmersus}</h2>
         </div>
       </div>
       <hr />
@@ -104,10 +103,4 @@ const HiddenCardInfo = (props) => {
     </div>
   );
 };
-const mapStateToProps = (state /*, ownProps*/) => {
-  return {
-    state: state,
-  }
-}
-
-export default connect(mapStateToProps)(HiddenCardInfo);
+export default HiddenCardInfo;
