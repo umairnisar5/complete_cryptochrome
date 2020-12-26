@@ -7,6 +7,8 @@ import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import HiddenCards from "./HiddenCards";
+import HiddenCards2 from "./HiddenCards2";
+import HiddenCards2 from "./HiddenCards3";
 import StakeData from "./StakeData";
 import HiddenCardInfo from "./HiddenCardInfo";
 
@@ -113,9 +115,9 @@ export default function FooterTabsView() {
       <TabPanel value={value} index={1}>
         <HiddenCards />
         <hr />
-        <HiddenCards />
+        <HiddenCards2  />
         <hr />
-        <HiddenCards />
+        <HiddenCards3 />
       </TabPanel>
       <TabPanel value={value} index={2}>
         <HiddenCardInfo />
