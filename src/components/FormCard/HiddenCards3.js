@@ -1,6 +1,6 @@
 import React from "react";
 import headerLogo from "./images/headerLogo.png";
-import {connect} from "react-redux";
+
 import "./HiddenCards.css";
 
 export const HiddenCards3 = ({address}) => {
@@ -12,8 +12,8 @@ export const HiddenCards3 = ({address}) => {
       <div className="cardDetail">
         <p>Uniswap pair</p>
         <h2>UNCX / WETH</h2>
-        <button>
-          {address}
+        <button >
+         <span className="ip-btn">{address}</span> 
           <i class="fa fa-clone" aria-hidden="true"></i>
         </button>
         <br />
