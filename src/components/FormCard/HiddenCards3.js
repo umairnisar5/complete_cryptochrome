@@ -17,7 +17,7 @@ export const HiddenCards3 = ({address}) => {
           <i class="fa fa-clone" aria-hidden="true"></i>
         </button>
         <br />
-        <a href="#"> view on Uniswap</a>
+        <a href="https://etherscan.io/">Etherscan</a>
       </div>
     </div>
   );
