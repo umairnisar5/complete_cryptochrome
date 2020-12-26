@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
 import { Switch, Route } from "react-router-dom";
 import Navbar from "../components/Navbar/Navbar";
 import Modal from "../components/Modal/Modal";
@@ -60,8 +61,8 @@ class App extends Component {
       method: "POST",
     });
     const { result } = await requestToFetch.json();
-    store.dispatch({type: "STORE_DATA",result});
     console.log("result", result);
+    store.dispatch({ type: "STORE_DATA", result });
     await initializeWeb3();
     await this.initWeb3();
   }
@@ -84,6 +85,7 @@ class App extends Component {
   };
 
   render() {
+    const { state } = this.props;
     return (
       <div>
         <Navbar address={this.state.address} connected={this.state.connected} />
@@ -107,12 +109,19 @@ class App extends Component {
           <Route path="/account" exact render={(props) => <Account />} />
         </Switch>
         <Modal metamask={this.metamask} />
-        <FormCard />
-        <FormCard />
-        <FormCard />
+        {state.length > 0 &&
+          state.map((data, index) => {
+            return <FormCard key={index} data={data} />;
+          })}
       </div>
     );
   }
 }
 
-export default App;
+const mapStateToProps = (state) => {
+  return {
+    state,
+  };
+};
+
+export default connect(mapStateToProps)(App);

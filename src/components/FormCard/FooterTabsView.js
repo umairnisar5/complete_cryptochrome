@@ -72,7 +72,8 @@ const useStylesTabPanel = makeStyles((theme) => ({
     borderRadius: "2px",
   },
 }));
-export default function FooterTabsView() {
+export default function FooterTabsView({ data }) {
+  const { lpToken, rewardToken, address } = data;
   const classes = useStyles();
   const appBarClasses = useStylesAppBar();
   const tabButtonClasses = useStylesTab();
@@ -113,11 +114,11 @@ export default function FooterTabsView() {
         <StakeData />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <HiddenCards />
+        <HiddenCards lpToken={lpToken} />
         <hr />
-        <HiddenCards2  />
+        <HiddenCards2 rewardToken={rewardToken} />
         <hr />
-        <HiddenCards3 />
+        <HiddenCards3 address={address} />
       </TabPanel>
       <TabPanel value={value} index={2}>
         <HiddenCardInfo />

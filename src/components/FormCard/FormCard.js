@@ -5,7 +5,9 @@ import FormCardFooter from "./FormCardFooter";
 import FooterTabsView from "./FooterTabsView";
 import "./FormCard.css";
 
-const FormCard = () => {
+const FormCard = ({ data }) => {
+  console.log(data)
+  const {lpToken} = data;
   const [value, setValue] = React.useState(false);
   const clickHandler = () => {
     setValue(!value);
@@ -15,10 +17,10 @@ const FormCard = () => {
     <div className="formContainer">
       <div onClick={clickHandler}>
         <FormCardHeader />
-        <FormCardDes />
+        <FormCardDes  />
         <FormCardFooter />
       </div>
-      {value && <FooterTabsView />}
+      {value && <FooterTabsView data={data}/>}
     </div>
   );
 };
