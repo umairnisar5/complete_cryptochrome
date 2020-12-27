@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
-
-
+*{
+  font-family: 'Montserrat', sans-serif;
+}
 #ticket {
   background: rgb(244, 4, 222);
   background: linear-gradient(
@@ -426,11 +428,26 @@
   font-weight: 700;
   color: var(--v-icon-base);
 }
-/* 
+
 .jumbotron {
   color: fuchsia;
   border-radius: 51px;
   font-size: 20px;
   padding: 38px 8px 28px 1px;
 
-} */
+} 
+
+#ticket{
+  width: 100%;
+}
+@media screen and (max-width:600px){
+  #ticket{
+    padding-top: 80px;
+  }
+  .jumbotron {
+    border-radius: 0px;
+  }
+  #creatform-div{
+
+  }
+}
