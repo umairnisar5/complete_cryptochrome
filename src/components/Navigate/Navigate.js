@@ -13,14 +13,14 @@ export default function Navigate() {
         </Link>
 
         <Link to="/">
-          <div>
+          <div className="farm-div">
             <i className="fa fa-superpowers fa-3x"></i>
             <h3>FARM</h3>
           </div>
         </Link>
 
         <Link to="/account">
-          <div>
+          <div className="account-div">
             <span className="fa fa-user fa-3x"></span>
             <h3>ACCOUNTS</h3>
           </div>

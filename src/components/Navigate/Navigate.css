@@ -23,6 +23,44 @@ a:hover {
  
 }
 .token-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 10px;
+  margin: 0 13px;
+  padding: 10px ;
+  color: white;
+  background: crimson;
+  border-radius: 40px;
+  
+
+}
+..token-div h3{
+  
+}
+.farm-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 10px;
+  margin: 0 13px;
+  padding: 10px ;
+  color: white;
+  background: crimson;
+  border-radius: 40px;
+  
+  
+}
+.account-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 10px;
+  margin: 0 13px;
+  padding: 10px ;
+  color: white;
+  background: crimson;
+  border-radius: 40px;
   
 }
 
