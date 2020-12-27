@@ -8,14 +8,14 @@
   );
   width: 60%;
 }
-
+/* 
 .center-div {
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 40px;
   /* background-color: rgba(75, 108, 216, 0.459); */
-}
+} */
 
 .continueBtn {
   word-break: normal;
