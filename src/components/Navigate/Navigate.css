@@ -16,7 +16,7 @@ a:hover {
 }
 
 .navigate-row{
-  width: 100%;
+ 
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -28,15 +28,15 @@ a:hover {
   align-items: center;
   font-size: 10px;
   margin: 0 13px;
-  padding: 10px ;
+  padding: 10px 30px;
   color: white;
   background: crimson;
-  border-radius: 40px;
+  border-radius: 25px;
   
 
 }
-..token-div h3{
-  
+.token-div h3{
+  font-size: 12px;
 }
 .farm-div{
   display: flex;
@@ -45,11 +45,15 @@ a:hover {
   font-size: 10px;
   margin: 0 13px;
   padding: 10px ;
+  padding: 10px 34px;
   color: white;
   background: crimson;
-  border-radius: 40px;
+  border-radius: 25px;
   
   
+}
+.farm-div h3{
+  font-size: 12px;
 }
 .account-div{
   display: flex;
@@ -58,12 +62,16 @@ a:hover {
   font-size: 10px;
   margin: 0 13px;
   padding: 10px ;
+  padding: 10px 16px;
   color: white;
   background: crimson;
-  border-radius: 40px;
+  border-radius: 25px;
   
 }
-
+.account-div h3{
+  font-size: 12px;
+ 
+}
 /* @media screen and (max-width:600px){
   #section2{
     position: fixed;
