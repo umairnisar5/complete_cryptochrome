@@ -7,7 +7,7 @@
     rgba(212, 41, 230, 1) 100%
   );
  
-  box-shadow: 0.2px 5px 4px rgba(0,0,0,0.5);
+  box-shadow: 0.2px 2px 4px rgba(0,0,0,0.6);
   position: fixed;
   z-index: 1;
   width: 100%;
@@ -16,4 +16,5 @@
 .row{
   display: flex;
   flex-direction: row;
+  
 }
