@@ -14,11 +14,23 @@
 a:hover {
   text-decoration: none;
 }
-@media screen and (max-width:600px){
+
+.navigate-row{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+ 
+}
+.token-div{
+  
+}
+
+/* @media screen and (max-width:600px){
   #section2{
     position: fixed;
         width: 100%;
         top: 60px;
         left: -100%;
   }
-}
+} */
