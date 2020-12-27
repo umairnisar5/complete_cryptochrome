@@ -6,5 +6,14 @@
 	 rgba(212, 41, 230, 1) 50%,
     rgba(212, 41, 230, 1) 100%
   );
-  border-bottom: 2px solid #fff;
+ 
+  box-shadow: 0.2px 5px 4px rgba(0,0,0,0.5);
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
 }
