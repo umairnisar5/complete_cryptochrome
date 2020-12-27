@@ -8,7 +8,7 @@ export const HiddenCards2 = ({ rewardToken }) => {
   const clickCopyHandler = () => {
     var elemToCopy = document.getElementById(textElemId);
     const textToCopy = elemToCopy.innerText;
-    alert("text copy")
+    alert("Copy")
     navigator.clipboard.writeText(textToCopy).then(
       function () {
         console.log("Async: Copying to clipboard was successful!");
