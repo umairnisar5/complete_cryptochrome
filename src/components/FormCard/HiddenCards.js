@@ -8,7 +8,7 @@ export const HiddenCards = ({ lpToken }) => {
   const myInput = uuidv4();
   const clickCopyHandler = () => {
     var elemToCopy = document.getElementById(myInput);
-    const textToCopy = myInput.innerText;
+    const textToCopy = elemToCopy.innerText;
     alert("Copy");
     navigator.clipboard.writeText(textToCopy).then(
       function () {
@@ -30,7 +30,7 @@ export const HiddenCards = ({ lpToken }) => {
         <p>Uniswap pair</p>
         <h2>UNCX / WETH</h2>
         <button onClick={clickCopyHandler} >
-         <span className="ip-btn" id="myInput"> {lpToken}</span>
+         <span className="ip-btn" id={myInput}> {lpToken}</span>
 
           <i class="fa fa-clone" aria-hidden="true"></i>
         </button>
