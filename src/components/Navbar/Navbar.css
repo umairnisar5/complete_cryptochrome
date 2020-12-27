@@ -13,8 +13,11 @@
   width: 100%;
 }
 
-.row{
-  display: flex;
-  flex-direction: row;
+#connect-div{
   
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   width: 100%;
+   margin-left: -7px;
 }
