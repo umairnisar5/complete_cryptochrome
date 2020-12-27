@@ -19,8 +19,6 @@ export const HiddenCards = ({ lpToken }) => {
       }
     );
   };
-
-  
   return (
     <div className="hiddenCardContainer">
       <div className="cardLogo">
