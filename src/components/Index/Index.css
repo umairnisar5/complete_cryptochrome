@@ -428,7 +428,10 @@
   font-weight: 700;
   color: var(--v-icon-base);
 }
-
+#accountform-div{
+  margin-top: -8px;
+  
+}
 .jumbotron {
   color: fuchsia;
   border-radius: 51px;
@@ -438,7 +441,7 @@
 } 
 
 #ticket{
-  width: 100%;
+  width: 80%;
 }
 @media screen and (max-width:600px){
   #ticket{
@@ -447,7 +450,15 @@
   .jumbotron {
     border-radius: 0px;
   }
-  #creatform-div{
-
+  
+}
+@media screen and (max-width:600px){
+  #ticket{
+    width: 100%;
   }
 }
+/* @media screen and (min-width:900px){
+  #ticket{
+    width: 60%;
+  }
+} */
