@@ -17,8 +17,8 @@ const Navbar = props => {
             </button>
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <div className="row" id="connect-div">
-                    <div className="col-sm-6">{top}</div>
-                    <div className="col-sm-6">
+                    <div className="con-btn">{top}</div>
+                    <div className="con-btn">
                         <button className="btn btn-warning"><span className="fa fa-cog"></span></button>
                     </div> 
                 </div>
