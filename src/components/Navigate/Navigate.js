@@ -9,7 +9,7 @@ export default function Navigate() {
                 <div className="col-sm-1"></div>
                 <div className="col-sm-2">
                     <Link to="/token">
-                        <div className="card" id="card_module" style={{borderRadius:"30px",background:"#b8b894"}}>
+                        <div className="card" id="card_module" style={{borderRadius:"30px",background:"#b8b894",fontSize:"15px"}}>
                             <center><span className="fa fa-circle-o fa-3x"></span><h3>TOKEN</h3></center>
                         </div>
                     </Link>
@@ -17,7 +17,7 @@ export default function Navigate() {
 
                 <div className="col-sm-2">
                     <Link to="/">
-                        <div className="card" id="card_module" style={{borderRadius:"30px",background:"#b8b894"}}>
+                        <div className="card" id="card_module" style={{borderRadius:"30px",background:"#b8b894",fontSize:"15px"}}>
                             <center><span className="fa fa-superpowers fa-3x"></span><h3>FARM</h3></center>
                         </div>
                     </Link>
@@ -25,7 +25,7 @@ export default function Navigate() {
                 
                 <div className="col-sm-2">
                     <Link to="/account">
-                        <div className="card" id="card_module" style={{borderRadius:"30px",background:"#b8b894"}}>
+                        <div className="card" id="card_module" style={{borderRadius:"30px",background:"#b8b894",fontSize:"15px"}}>
                             <center><span className="fa fa-user fa-3x"></span><h3>ACCOUNTS</h3></center>
                         </div>
                     </Link>
