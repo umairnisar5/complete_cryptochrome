@@ -1,5 +1,8 @@
 #section2 {
-  padding-top: 95px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+  background:  #f3f3f3;
 }
 
 #card_module {
@@ -72,11 +75,11 @@ a:hover {
   font-size: 12px;
  
 }
-/* @media screen and (max-width:600px){
+@media screen and (max-width:600px){
   #section2{
     position: fixed;
         width: 100%;
         top: 60px;
         left: -100%;
   }
-} */
+}

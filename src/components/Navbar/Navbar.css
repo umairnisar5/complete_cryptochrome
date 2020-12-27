@@ -8,9 +8,15 @@
   );
  
   box-shadow: 0.2px 2px 4px rgba(0,0,0,0.6);
-  position: fixed;
-  z-index: 1;
-  width: 100%;
+  
+}
+@media screen and (max-width:600px){
+    
+  #nav1 {
+    position: fixed;
+     z-index: 1;
+    width: 100%;
+  }
 }
 
 #connect-div{

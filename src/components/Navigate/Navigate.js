@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./Navigate.css";
 export default function Navigate() {
   return (
-    <div className="jumbotron" id="section2">
+    <div  id="section2">
       <div className="navigate-row">
         <Link to="/token">
           <div className="token-div">
