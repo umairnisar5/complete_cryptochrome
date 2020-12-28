@@ -441,6 +441,7 @@
 }
 @media screen and (max-width:600px){
   #ticket{
+    
     padding-top: 90px;
   }
 
@@ -456,6 +457,7 @@
   #ticket{
     width: 100%;
     margin-top: 0px;
+    
   }
 }
 
