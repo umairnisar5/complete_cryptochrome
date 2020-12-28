@@ -812,7 +812,7 @@ export default function Index(props) {
   };
 
   return (
-    <div>
+    <div >
       <center>
         <div className="jumbotron" id="ticket">
           <h1 style={{ fontWeight: "bold", color: "#fff" }}>$630k</h1>
@@ -820,12 +820,13 @@ export default function Index(props) {
             Total farming liquidity
           </p>
           <hr />
-          <div className="row">
+         
             <div className="col-sm-6"></div>
 
             {renderModal()}
 
             <div className="col-sm-6" id="creatform-div">
+
               <button
                 className=" btn-primary btn-lg"
                 data-toggle="modal"
@@ -834,6 +835,7 @@ export default function Index(props) {
               >
                 Create Farm
               </button>
+
               <button
                 className="btn-primary btn-lg"
                 style={{ background: "none", border: "1px solid #fff" }}
@@ -841,7 +843,7 @@ export default function Index(props) {
                 <span className="fa fa-circle-o"></span>
                 <span className="fa fa-sort"></span>
               </button>
-            </div>
+            
           </div>
         </div>
       </center>

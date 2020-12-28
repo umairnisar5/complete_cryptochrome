@@ -444,7 +444,7 @@
   border-radius: 31px;
   font-size: 20px;
   width: 80%;
-  
+  margin-top: 10px;
 }
 #btn-primary{
   margin-bottom: 14px;
@@ -476,10 +476,9 @@
   #ticket{
     width: 100%;
     margin-top: 0px;
-    
   }
   .account-box{
-    padding-top: 10px;
+    
     margin-top: 0px;
   }
 }
