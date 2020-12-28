@@ -8,10 +8,11 @@
     );
     border-radius: 31px;
   font-size: 20px;
-  padding: 38px 8px 28px 1px;
+  padding: 54px 8px 53px 1px;
   width: 80%;
   margin-top: 10px;
 }
+
 
 @media screen and (max-width:600px){
     #token-ticket{
@@ -44,3 +45,21 @@
       width: 680px;
     }
   } 
+  .farmable-token{
+      color: white;
+      font-weight: 700;
+      text-align: left;
+  }
+  .form-control{
+      border: 2px double white;
+      margin: 0 3px;
+      font-weight: 700;
+  }
+  #form-control-id{
+    color: white;
+   
+  }
+  #form-control-id::placeholder {
+    color: white;
+    opacity: 1;
+}

@@ -5,13 +5,14 @@ export default function Token() {
     <div>
       <center>
         <div id="token-ticket">
-          <h2 style={{ textAlign: "left" }}>Farmable tokens</h2>
+          <h2 className="farmable-token">Farmable tokens</h2>
           <form method="POST">
             <input
               type="text"
               name="find"
               placeholder="Search Tokens"
               className="form-control"
+              id="form-control-id"
               style={{ background: "none", color: "#fff" }}
             />
           </form>
