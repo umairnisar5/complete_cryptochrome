@@ -830,13 +830,15 @@ export default function Index(props) {
                 className=" btn-primary btn-lg"
                 data-toggle="modal"
                 data-target="#myWallet"
-                style={{ background: "none", border: "1px solid #fff" }}
+                style={{ background: "none", outline: "none", outlineStyle: "none", border: "1px solid #fff" }}
               >
                 Create Farm
               </button>
               <button
                 className="btn-primary btn-lg"
-                style={{ background: "none", border: "1px solid #fff" }}
+                style={{ background: "none",
+                 outline: "none", 
+                 outlineStyle: "none", border: "1px solid #fff" }}
               >
                 <span className="fa fa-circle-o"></span>
                 <span className="fa fa-sort"></span>
