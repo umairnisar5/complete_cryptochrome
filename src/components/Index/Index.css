@@ -449,19 +449,23 @@
   #ticket{
     padding-top: 90px;
   }
+
+}
+@media screen and (max-width:650px){
+ 
   .jumbotron {
     border-radius: 0px;
   }
   
 }
-@media screen and (max-width:600px){
+@media screen and (max-width: 650px){
   #ticket{
     width: 100%;
     margin-top: 0px;
   }
 }
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 650px){
   #ticket{
     width: 600px;
   }
