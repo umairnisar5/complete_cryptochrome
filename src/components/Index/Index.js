@@ -812,8 +812,8 @@ export default function Index(props) {
   };
 
   return (
-    <div className="">
-      <center className="">
+    <div>
+      <center>
         <div className="jumbotron" id="ticket">
           <h1 style={{ fontWeight: "bold", color: "#fff" }}>$630k</h1>
           <p style={{ fontWeight: "bold", color: "#fff" }}>
