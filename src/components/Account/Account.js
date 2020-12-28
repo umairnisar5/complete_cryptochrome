@@ -6,7 +6,7 @@ export default function Account() {
   return (
     <div >
       <center>
-        <h1 style={{ color: "#fff" }}></h1>
+        
         <div className="account-box" id="ticket">
           <img src="img/icon/farm_token.png" alt="" />
           <p style={{ color: "#fff", fontWeight: "700" }}>
@@ -14,6 +14,7 @@ export default function Account() {
           </p>
           <Link to="/">
             <button
+            id="btn-primary"
               className="btn btn-primary btn-lg"
               style={{
                 background: "none",
