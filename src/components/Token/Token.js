@@ -1,10 +1,10 @@
 import React from "react";
-
+import "../Token/token.css"
 export default function Token() {
   return (
-    <div className="container">
+    <div className="container" >
       <center>
-        <div className="jumbotron" id="ticket">
+        <div className="jumbotron" id="token-ticket">
           <h2 style={{ textAlign: "left" }}>Farmable tokens</h2>
           <form method="POST">
             <input

@@ -1,0 +1,9 @@
+#token-ticket{
+    background: rgb(244, 4, 222);
+    background: linear-gradient(
+      90deg,
+      rgba(244, 4, 222, 1) 0%,
+      rgba(14, 144, 228, 1) 51%,
+      rgba(212, 41, 230, 1) 100%
+    );
+}
