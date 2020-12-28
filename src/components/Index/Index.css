@@ -436,17 +436,18 @@
   color: fuchsia;
   border-radius: 31px;
   font-size: 20px;
-  padding: 20px 8px 20px 1px;
+  padding: 12px 8px 12px 1px;
   
 
 } 
 
 #ticket{
   width: 80%;
+  margin-top: 10px;
 }
 @media screen and (max-width:600px){
   #ticket{
-    padding-top: 80px;
+    padding-top: 90px;
   }
   .jumbotron {
     border-radius: 0px;
@@ -456,10 +457,18 @@
 @media screen and (max-width:600px){
   #ticket{
     width: 100%;
+    margin-top: 0px;
   }
 }
-/* @media screen and (min-width:900px){
+
+@media screen and (min-width: 600px){
   #ticket{
-    width: 60%;
+    width: 600px;
   }
-} */
+} 
+
+@media screen and (min-width: 700px){
+  #ticket{
+    width: 680px;
+  }
+} 
