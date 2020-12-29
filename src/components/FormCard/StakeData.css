@@ -98,6 +98,8 @@
      align-items: center;
      justify-content: space-between;
      padding: 12px;
+     padding-top: 15px;
+     padding-bottom: 15px;
  }
  .third-1-div{
    text-align: left;
@@ -111,12 +113,12 @@
 
  .withdraw-btn{
     padding: 6px 10px;
-    color: #6c757d;
     border: 1px solid darkblue;
     background-color: transparent;
     border-radius: 19px;
     color: darkblue;
     font-weight: 700;
+    box-sizing: border-box;
  }
  .forth-div{
     box-shadow: 2px 3px 3px 2.5px rgba(0, 0, 0, 0.20);
@@ -151,6 +153,12 @@
     
  }
  .forth-div button{
-     
+     width: 94%;
+     padding: 5px;
+     margin-bottom: 20px;
+    border: 1px solid lightgrey;
+    font-weight: 700;
+    color: rgb(185, 3, 185);
+    background: transparent;
  }
  
