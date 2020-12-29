@@ -41,9 +41,24 @@
     margin: 15px 12px 0px 0px;
 }
 .my-first-div{
-      background-color: whitesmoke;
-      border-radius: 15px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.univ2-div{
+      
+      text-align: left;
 }
  .univ2-div{
      padding-left: 25px;
+ }
+ .stake-btn{
+     padding: 6px 10px;
+     color: #6c757d;
+     margin-right: 20px;
+     border: none;
+     background-color: lightgrey;
+     border-radius: 5px;
  }

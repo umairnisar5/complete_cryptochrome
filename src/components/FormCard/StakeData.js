@@ -26,12 +26,11 @@ const StakeData = () => {
       <div  className="my-first-div">
       <div className="univ2-div">
         <p>Avaiable to stake</p>
-        <h2>0 UNIv2</h2>
+        <p>0 UNIv2</p>
         <p>$ 0</p>
      </div>
-     <div>
-        <button>stake</button>
-        <hr />
+     <div >
+        <button className="stake-btn">stake</button>
         </div>
       </div>
 
