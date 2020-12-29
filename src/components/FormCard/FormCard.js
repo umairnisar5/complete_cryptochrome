@@ -14,14 +14,18 @@ const FormCard = ({ data }) => {
     console.log(!value);
   };
   return (
+    <center>
     <div className="formContainer">
+    
       <div onClick={clickHandler}>
         <FormCardHeader />
         <FormCardDes  />
         <FormCardFooter />
       </div>
+    
       {value && <FooterTabsView data={data}/>}
     </div>
+    </center>
   );
 };
 

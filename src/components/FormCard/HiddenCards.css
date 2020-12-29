@@ -3,9 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-.formContainer{
-    @media
-}
+
 .hiddenCardContainer {
     display: flex;
     flex-direction: row;
