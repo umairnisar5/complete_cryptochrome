@@ -16,8 +16,8 @@ body{
     margin-top: 10px;
   }
   @media screen and (max-width:650px){
-    #formContainer{
-      padding-top: 0px;
+    .formContainer{
+      margin-top: -40px;
     }
   }
  

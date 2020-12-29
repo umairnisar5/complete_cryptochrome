@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../Index/Index.css";
-
+import "../Account/account.css"
 export default function Account() {
   return (
     <div >
