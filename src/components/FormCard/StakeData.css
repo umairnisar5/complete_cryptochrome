@@ -117,3 +117,27 @@
     color: darkblue;
     font-weight: 700;
  }
+ .forth-div{
+    box-shadow: 2px 3px 3px 2.5px rgba(0, 0, 0, 0.20);
+    border-radius: 15px;
+ }
+ .uncl-div{
+     display: flex;
+     flex-direction: row;
+     font-weight: 800;
+     color: darkblue;
+ }
+ .uncl-logo{
+     color: darkblue;
+ }
+ .unclaimed-div{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 12px;
+    
+ }
+ .uncl-logo{
+     text-align: ;
+ }
+ 

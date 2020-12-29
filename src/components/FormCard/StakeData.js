@@ -58,16 +58,22 @@ const StakeData = () => {
       <hr />
       <div className="forth-div">
         <p>Unclaimed rewards</p>
+        <div className="unclaimed-div">
         <div className="uncl-logo">
+        <div className="uncl-div">
         <img src={headerLogo} height="35" />
         <h2>UNCL</h2>
+        </div>
         <p>Wallet balance:</p>
         </div>
         <div className="digit">
         <h2>0.0106160</h2>
+        <p>0</p>
         </div>
-      </div>
+        </div>
+      
       <button>Harvest</button>
+      </div>
       <hr />
 
       </div>
