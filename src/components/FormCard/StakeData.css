@@ -1,5 +1,6 @@
 .stakeDataContainer{
     margin: 10px;
+   
 }
 
 .stakeHeader {
@@ -120,6 +121,11 @@
  .forth-div{
     box-shadow: 2px 3px 3px 2.5px rgba(0, 0, 0, 0.20);
     border-radius: 15px;
+    margin-top: 30px;
+ }
+ .unclaim-p{
+     font-weight: 700;
+     padding-top: 10px;
  }
  .uncl-div{
      display: flex;
@@ -130,6 +136,13 @@
  .uncl-logo{
      color: darkblue;
  }
+ .uncl-logo p{
+     font-weight: 700;
+ }
+ .digit{
+     text-align: right;
+     font-weight: 700;
+ }
  .unclaimed-div{
      display: flex;
      justify-content: space-between;
@@ -137,7 +150,7 @@
      padding: 12px;
     
  }
- .uncl-logo{
-     text-align: ;
+ .forth-div button{
+     
  }
  

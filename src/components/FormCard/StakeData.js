@@ -55,9 +55,11 @@ const StakeData = () => {
         <button className="withdraw-btn">Withdraw</button>
         </div>
       </div>
-      <hr />
+     
       <div className="forth-div">
-        <p>Unclaimed rewards</p>
+      <div className="unclaim-p">
+        <p >Unclaimed rewards</p>
+        </div>
         <div className="unclaimed-div">
         <div className="uncl-logo">
         <div className="uncl-div">
@@ -74,7 +76,7 @@ const StakeData = () => {
       
       <button>Harvest</button>
       </div>
-      <hr />
+      
 
       </div>
     </div>
