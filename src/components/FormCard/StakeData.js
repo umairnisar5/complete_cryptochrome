@@ -22,15 +22,20 @@ const StakeData = () => {
         <i className="fa fa-paw" aria-hidden="true"></i>
         <p>Get liquidity tokens</p>
       </div>
-      <div  className="first-div">
+<hr />
+      <div  className="my-first-div">
+      <div className="univ2-div">
         <p>Avaiable to stake</p>
         <h2>0 UNIv2</h2>
         <p>$ 0</p>
+     </div>
+     <div>
         <button>stake</button>
         <hr />
+        </div>
       </div>
 
-
+      <hr />
       <div className="second-div">
       <div className="icon-div">
       <i class="fa fa-clone" aria-hidden="true"></i>
