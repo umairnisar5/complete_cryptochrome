@@ -728,7 +728,7 @@ export default function Index(props) {
         </div>
 
         {isPopUpFirstPage ? (
-          <div style={{ marginLeft: 20, marginRight: 20 }}>
+          <div style={{ marginLeft: 20, marginRight: 20, height: 80, width: 70 }}>
             <span style={{ fontSize: 30 }}>
               Launching a farm on a uniswap pair is now incredibly simple. You
               deposit the reward token into a vault contract, set the start
