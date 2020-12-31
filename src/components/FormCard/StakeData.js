@@ -1,6 +1,7 @@
 import React from "react";
 import headerLogo from "./images/headerLogo.png";
 import "./StakeData.css";
+import Modal from "react-modal";
 
 const StakeData = () => {
   return (
@@ -18,7 +19,9 @@ const StakeData = () => {
       <div className="stakeDes">
         <p>You need UniV2 liquidity tokens to farm this pool</p>
       </div>
-      <div className="stakeFooter">
+      <div className="stakeFooter" 
+          data-toggle="modal"
+          data-target="#myWallet">
         <i className="fa fa-paw" aria-hidden="true"></i>
         <p>Get liquidity tokens</p>
       </div>
