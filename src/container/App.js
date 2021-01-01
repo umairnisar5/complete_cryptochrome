@@ -154,10 +154,13 @@ class App extends Component {
     const web3 = new Web3(Web3.givenProvider || "http://localhost:8545");
     const accounts = await web3.eth.getAccounts();
     const contract = new web3.eth.Contract(CONTRACT_ABI, CONTRACT_ADDRESS);
-    web3.eth.getBalance(accounts[0], (err, balance) => {
-      // set lance in state then hide card if balance is 0
-    console.log(balance)
-    });
+
+    // web3.eth.getBalance(accounts[0], (err, balance) => {
+    //   // set lance in state then hide card if balance is 0
+    // console.log(balance)
+    // });
+      // let tokens = await contract.methods.balanceOf(CONTRACT_ADDRESS).call();
+      // console.log("tokens",tokens)
     this.setState({ account: accounts[0], web3, contract });
     console.log("show data",accounts)
   };
