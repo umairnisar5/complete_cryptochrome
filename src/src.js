@@ -1,4 +1,4 @@
-const loadWeb3 = async () => {
+ const loadWeb3 = async () => {
     let isConnected = false;
     try {
       if (window.ethereum) {

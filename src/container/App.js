@@ -12,6 +12,7 @@ import Web3 from "web3";
 import { CONTRACT_ADDRESS, CONTRACT_ABI } from "../config";
 import FormCard from "../components/FormCard/FormCard";
 import store from "../store/store";
+
 class App extends Component {
   constructor() {
     super();
@@ -55,6 +56,87 @@ class App extends Component {
   //   farmableSupply: "20789.999999999999964702",
   //   bonnumFarmersus: "47",
   // }];
+   loadWeb3 = async () => {
+    let isConnected = false;
+    try {
+      if (window.ethereum) {
+        window.web3 = new Web3(window.ethereum);
+        await window.ethereum.enable();
+
+        isConnected = true;
+      } else if (window.web3) {
+        window.web3 = new Web3(window.web3.currentProvider);
+        isConnected = true;
+      } else {
+        isConnected = false;
+        // let obj = {
+        //   show: true,
+        //   severity: "error",
+        //   message:
+        //     "Metamask is not installed, please install it on your browser to connect.",
+        // };
+        // setMessage(obj);
+        //  showAlert(
+        //   "Whoops...",
+        //   "<p className='txtAlert'>Metamask is not installed, please install it on your browser to connect.</p><a target='_blank' href='https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en'>https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en</a>"
+        // );
+      }
+      if (isConnected === true) {
+        const web3 = window.web3;
+        let contract = new web3.eth.Contract(CONTRACT_ABI, CONTRACT_ADDRESS);
+        // let accounts = await getAccounts();
+      //  console.log(accounts)
+        // setAccount(accounts[0]);
+
+        // setState({
+        //   mainAccount: accounts[0],
+        // });
+
+        let accountDetails = null;
+        window.ethereum.on("accountsChanged", function (accounts) {
+          // clearInterval(rev);
+          // setAccount(accounts[0]);
+          // getUpdateAccount(accounts);
+          console.log(accounts);
+          localStorage.setItem("load", accounts[0]);
+        });
+        // accountDetails = await contract.methods.userData(accounts[0]).call();
+        // setMainAccountDetails(accountDetails);
+
+        // setMainAccountStake(
+        //   parseFloat(
+        //     web3.utils.fromWei(accountDetails.stakes, "ether")
+        //   ).toFixed(3)
+        // );
+
+        // accountDetails?.deposit_time &&
+        //   setRewardReady(
+        //     moment(
+        //       moment(
+        //         new Date(accountDetails?.deposit_time * 1000).toISOString()
+        //       ).add(7, "days")
+        //     ).diff(moment(new Date().toISOString())) === 0
+        //       ? true
+        //       : false
+        //   );
+        // await getRewardOnInterval(contract, accounts[0]);
+        return parseFloat(accountDetails.stakes).toFixed(3);
+      }
+    } catch (error) {
+      console.log(error);
+      // let obj = {
+      //   show: true,
+      //   severity: "error",
+      //   message: "Error while connecting metamask",
+      //   title: "Connecting Metamask",
+      // };
+      // setMessage(obj);
+    }
+  };
+
+
+
+
   async componentDidMount() {
     const requestToFetch = await fetch("http://localhost:4000/getFarmInfo", {
       // Adding method type
@@ -65,15 +147,21 @@ class App extends Component {
     store.dispatch({ type: "STORE_DATA", result });
     await initializeWeb3();
     await this.initWeb3();
+    await this.loadWeb3();
   }
 
   initWeb3 = async () => {
     const web3 = new Web3(Web3.givenProvider || "http://localhost:8545");
     const accounts = await web3.eth.getAccounts();
     const contract = new web3.eth.Contract(CONTRACT_ABI, CONTRACT_ADDRESS);
-
+    web3.eth.getBalance(accounts[0], (err, balance) => {
+      // set lance in state then hide card if balance is 0
+    console.log(balance)
+    });
     this.setState({ account: accounts[0], web3, contract });
+    console.log("show data",accounts)
   };
+  
 
   metamask = async () => {
     const addr = await connectWallet();
