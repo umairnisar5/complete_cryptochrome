@@ -56,7 +56,7 @@ class App extends Component {
   //   farmableSupply: "20789.999999999999964702",
   //   bonnumFarmersus: "47",
   // }];
-   loadWeb3 = async () => {
+  loadWeb3 = async () => {
     let isConnected = false;
     try {
       if (window.ethereum) {
@@ -85,7 +85,7 @@ class App extends Component {
         const web3 = window.web3;
         let contract = new web3.eth.Contract(CONTRACT_ABI, CONTRACT_ADDRESS);
         // let accounts = await getAccounts();
-      //  console.log(accounts)
+        //  console.log(accounts)
         // setAccount(accounts[0]);
 
         // setState({
@@ -134,9 +134,6 @@ class App extends Component {
     }
   };
 
-
-
-
   async componentDidMount() {
     const requestToFetch = await fetch("http://localhost:4000/getFarmInfo", {
       // Adding method type
@@ -148,6 +145,23 @@ class App extends Component {
     await initializeWeb3();
     await this.initWeb3();
     await this.loadWeb3();
+    let response = await fetch(
+      "https://api.etherscan.io/api?module=contract&action=getabi&address=" +
+        result[0].lpToken +
+        "&apikey=FP934Q4T14QY4T1XSQT3Q7IZWVFHQAPWWI"
+    );
+
+    let data = await response.json();
+    console.log("abi====>" + data.result);
+    let abi = JSON.parse(data.result);
+    const web3 = window.web3;
+    let contract = new web3.eth.Contract(abi, result[0].lpToken, {
+      gasLimit: 3000000,
+    });
+    let blnce = await contract.methods.balanceOf(result[0].lpToken).call();
+    console.log("blnce", blnce);
+    localStorage.setItem("balance", blnce);
+    this.setState({ balance: blnce });
   }
 
   initWeb3 = async () => {
@@ -159,12 +173,11 @@ class App extends Component {
     //   // set lance in state then hide card if balance is 0
     // console.log(balance)
     // });
-      // let tokens = await contract.methods.balanceOf(CONTRACT_ADDRESS).call();
-      // console.log("tokens",tokens)
+    // let tokens = await contract.methods.balanceOf(CONTRACT_ADDRESS).call();
+    // console.log("tokens",tokens)
     this.setState({ account: accounts[0], web3, contract });
-    console.log("show data",accounts)
+    console.log("show data", accounts);
   };
-  
 
   metamask = async () => {
     const addr = await connectWallet();
@@ -211,8 +224,7 @@ class App extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    farmsArray: state.farmsArray
-    
+    farmsArray: state.farmsArray,
   };
 };
 
