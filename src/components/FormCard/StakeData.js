@@ -1,11 +1,12 @@
 import React from "react";
 import headerLogo from "./images/headerLogo.png";
 import "./StakeData.css";
-import Modal from "react-modal";
 
 const StakeData = () => {
+     
+
   return (
-    <div className="stakeDataContainer">
+    <div >
       <div className="stakeHeader">
       <div>
         <img src={headerLogo} height="35" />

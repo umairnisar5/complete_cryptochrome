@@ -85,7 +85,7 @@ class App extends Component {
   };
 
   render() {
-    const { state } = this.props;
+    const { farmsArray } = this.props;
     return (
       <div>
         <Navbar address={this.state.address} connected={this.state.connected} />
@@ -109,8 +109,8 @@ class App extends Component {
           <Route path="/account" exact render={(props) => <Account />} />
         </Switch>
         <Modal metamask={this.metamask} />
-        {state.length > 0 &&
-          state.map((data, index) => {
+        {farmsArray.length > 0 &&
+          farmsArray.map((data, index) => {
             return <FormCard key={index} data={data} />;
           })}
       </div>
@@ -120,7 +120,8 @@ class App extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    state,
+    farmsArray: state.farmsArray
+    
   };
 };
 

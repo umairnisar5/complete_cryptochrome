@@ -728,34 +728,33 @@ export default function Index(props) {
         </div>
 
         {isPopUpFirstPage ? (
-          <div style={{ marginLeft: 20, marginRight: 20, height: 80, width: 70 }}>
-            <span style={{ fontSize: 30 }}>
+          <div className="pop_form">
+            <span style={{ fontSize: 25 }}>
               Launching a farm on a uniswap pair is now incredibly simple. You
               deposit the reward token into a vault contract, set the start
               block, endblock, and bonus period -And your done!
             </span>
 
-            <div className="caption mt-3" style={{ marginBottom: 10 }}>
-              {" "}
-              A farming contract is final. You cannot change{" "}
+            <div className="caption mt-3">
+              A farming contract is final. You cannot change
               <span className="font-weight-bold">any</span> paramaters once
               initialised. There is no way to remove tokens other than farm them
               out over the set period. You cannot increase rewards either
-              although you may create additional farms.{" "}
+              although you may create additional farms.
               <div className="font-weight-bold mt-3">
-                {" "}
-                Do not use this with{" "}
+                
+                Do not use this with
               </div>
               <div className="d-flex align-start">
                 <i
                   aria-hidden="true"
                   className="v-icon notranslate mt-1 mr-2 mdi mdi-circle theme--light"
-                  style={{ fontSize: "12px" }}
+                  style={{ fontSize: "10px" }}
                 />
                 <div>
-                  {" "}
+                  
                   Rebasing tokens or any 'hack' on how a ERC20 token should
-                  function.{" "}
+                  function.
                 </div>
               </div>
               <div className="d-flex align-start">
@@ -773,23 +772,23 @@ export default function Index(props) {
                   style={{ fontSize: "12px" }}
                 />
                 <div>
-                  {" "}
+                  
                   We reserve the right to delist your farm from our front end
                   app if you dont adhere to these token specifications as it
-                  will affect farmers.{" "}
+                  will affect farmers.
                 </div>
               </div>
               <div className="mt-3">
-                {" "}
+                
                 Essentially 1 token must always equal 1 token. If you send
                 someone one token and they recieve less than one token you wont
                 be able to generate a farm. For the rest of the 99% of normal
                 ERC20 tokens with no weird transfer functions or magically
-                changing balances (rebasing), this platform is for you.{" "}
+                changing balances (rebasing), this platform is for you.
               </div>
               <div className="mt-3 primary--text">
-                {" "}
-                Feel free to email Mark at email for help setting up your farm.{" "}
+                
+                Feel free to email Mark at email for help setting up your farm.
               </div>
             </div>
 
