@@ -1,4 +1,9 @@
 /* first div */
+.hiddenCardInfo{
+    text-align: left;
+}
+
+
 .percentageDiv {
     display: flex;
 }
